@@ -1,0 +1,48 @@
+.socialHeader {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #2E4057;
+}
+.socialHeader h1 {
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  min-width: 250px;
+  font-weight: 200;
+  font-size: 26px;
+  color: white;
+}
+.socialHeader .socialBTNS {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  min-width: 300px;
+  max-width: 550px;
+  align-items: center;
+  background: #2E4057;
+}
+.socialHeader .socialBTNS a {
+  box-sizing: border-box;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-bottom: 4px solid transparent;
+}
+.socialHeader .socialBTNS a:hover {
+  background: #384a5f;
+  border-bottom: 4px solid #FFC472;
+  transition: all 0.2s ease-in-out;
+}
+.socialHeader .socialBTNS a:active {
+  background: #2c3d53;
+}
+.socialHeader .socialBTNS a i {
+  line-height: 50px;
+  font-size: 24px;
+}
