@@ -1,5 +1,4 @@
 .socialHeader {
-  height: 50px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -38,9 +37,11 @@
   background: #384a5f;
   border-bottom: 4px solid #FFC472;
   transition: all 0.2s ease-in-out;
+  cursor: pointer
 }
 .socialHeader .socialBTNS a:active {
   background: #2c3d53;
+  cursor: pointer
 }
 .socialHeader .socialBTNS a i {
   line-height: 50px;

@@ -11,4 +11,10 @@ const SocialBTN = (props) => {
   );
 }
 
+SocialBTN.PropTypes = {
+  social: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  external: PropTypes.string.isRequired
+}
+
 export default SocialBTN

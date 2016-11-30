@@ -1,0 +1,34 @@
+{
+  "description" : "Featured Pens",
+  "profile_URL" : "https://codepen.io/grsmith",
+  "pens" : [
+    {
+      "name" : "Amplifier Dashboard UI",
+      "slug" : "pNrPBM"
+    },
+    {
+      "name" : "Responsive Social Bar",
+      "slug" : "XNpbqZ"
+    },
+    {
+      "name" : "Radio Inputs Styled as Cards",
+      "slug" : "VmpGOz"
+    },
+    {
+      "name" : "Wave Shape CSS Icons",
+      "slug" : "vyZBrR"
+    },
+    {
+      "name" : "Wikipedia Search",
+      "slug" : "RREpOA"
+    },
+    {
+      "name" : "Parallax on the Web",
+      "slug" : "RGOxPm"
+    },
+    {
+      "name" : "Local Weather",
+      "slug" : "QEkWNN"
+    }
+  ]
+}

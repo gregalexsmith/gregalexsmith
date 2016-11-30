@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import logo from '../images/logo.svg';
+// import logo from '../images/logo.svg';
 import './App.css';
 import Header from './common/Header'
 

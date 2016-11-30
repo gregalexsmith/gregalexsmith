@@ -1,10 +1,11 @@
-import React, { PropTypes } from 'react'
-import Work from '../work/Work'
+import React from 'react'
+import CodePenFeature from '../portfolio/CodePenFeature'
+
 
 class HomePage extends React.Component {
   render () {
     return (
-      <Work />
+      <CodePenFeature />
     )
   }
 }

@@ -6,7 +6,7 @@ const Work = (props) => {
   return (
     <div className="work">
       <img src={wikiSearch} alt="Wikipedia Search App" />
-      
+
     </div>
   )
 }
