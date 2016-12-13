@@ -6,7 +6,7 @@ class Header extends Component {
   render() {
     return (
       <div className="socialHeader">
-        <h1>Profile Page</h1>
+        <h1>Greg Smith</h1>
         <div className="socialBTNS">
           <SocialBTN
             social="github"

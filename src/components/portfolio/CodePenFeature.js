@@ -3,7 +3,7 @@ import codepenData from './featured_pens.json';
 import './codepen.css'
 
 const CodePenFeature = (props) => {
-  function renderPen() {
+  function renderPens() {
     return (
       codepenData.pens.map( pen => {
         let penURL = codepenData.profile_URL + "/pen/" + pen.slug;
@@ -27,12 +27,12 @@ const CodePenFeature = (props) => {
   }
 
   return (
-    <div className="pen-container">
+    <section className="pen-section">
       <h1>Codepen Projects</h1>
       <div className="pen-container">
-        {renderPen()}
+        {renderPens()}
       </div>
-    </div>
+    </section>
   )
 }
 

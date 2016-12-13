@@ -1,15 +1,17 @@
-.pen-container {
-  margin: auto;
+.pen-section {
   width: 100%;
-  max-width: 800px;
+}
+
+.pen-section h1 {
+  margin: 20px 0;
+}
+
+.pen-container {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-}
-
-.pen-container h1 {
-  margin: 20px;
 }
 
 .pen-item {
