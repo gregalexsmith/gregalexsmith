@@ -1,13 +1,13 @@
 import React, { Component, PropTypes } from 'react';
 // import logo from '../images/logo.svg';
 import './App.css';
-import Header from './common/Header'
+import NavBar from './common/NavBar'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        <NavBar />
         {this.props.children}
       </div>
     );

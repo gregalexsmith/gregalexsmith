@@ -1,0 +1,16 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #2E4057;
+}
+
+.nav-bar h1 {
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  min-width: 250px;
+  font-weight: 200;
+  font-size: 26px;
+  color: white;
+}

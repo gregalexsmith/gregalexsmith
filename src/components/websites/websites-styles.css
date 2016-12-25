@@ -1,0 +1,24 @@
+.websites-section {
+  width: 100%;
+}
+
+.websites-section h1 {
+  margin: 20px 0;
+}
+
+.websites-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.websites-images {
+  display: flex;
+}
+
+.websites-images img {
+  display: block;
+  flex: 0 1 100px;
+}

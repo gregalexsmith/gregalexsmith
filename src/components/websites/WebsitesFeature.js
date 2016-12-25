@@ -1,12 +1,18 @@
 import React from 'react';
-import './codepen.css';
+import './websites-styles.css';
+import mmHome from '../../images/mm-home.jpg'
+import mmSignup from '../../images/mm-signup.jpg'
 
 const WebsitesFeature = (props) => {
 
   return (
-    <section className="pen-section">
-      <h1>Websites</h1>
+    <section className="websites-section">
+      <h1 className="header-full-block">Websites</h1>
       <div className="container">
+        <div className="websites-images">
+          <img src={mmHome}/>
+          <img src={mmSignup}/>
+        </div>
         <figure className="">
           <a href="https://mediamade.io">
             <div className="">
