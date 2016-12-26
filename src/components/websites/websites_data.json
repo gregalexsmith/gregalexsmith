@@ -1,0 +1,23 @@
+{
+  "websites": [
+    {
+      "title" : "Media Made",
+      "url": "https://mediamade.io",
+      "about" : "A production company connecting business owners with creators to build effective content for their brand.",
+      "goals" : "Introduce users to the service and provide a way to register as a content creator or a business.",
+      "tech" : {
+        "frontEnd" : "React, Redux, Webpack, PostCSS",
+        "backEnd" : "Firebase"
+      }
+    },
+    {
+      "title" : "Cirroo - Artist Page",
+      "about" : "A production company connecting business owners with creators to build effective content for their brand.",
+      "goals" : "Introduce users to the service and provide a way to register as a content creator or a business.",
+      "tech" : {
+        "frontEnd" : "React, Redux, Webpack, PostCSS",
+        "backEnd" : "Firebase"
+      }
+    }
+  ]
+}

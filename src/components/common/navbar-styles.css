@@ -1,16 +1,32 @@
-.nav-bar {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  background: #2E4057;
-}
+$height: 50px;
 
-.nav-bar h1 {
-  display: inline-block;
-  text-align: center;
-  line-height: 50px;
-  min-width: 250px;
-  font-weight: 200;
-  font-size: 26px;
-  color: white;
+.nav-bar {
+  background: #EBEDED;
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    h1 {
+      color: #004953;
+      text-align: center;
+      line-height: $height;
+      font-weight: 200;
+      font-size: 26px;
+    }
+    .nav-links {
+      display: flex;
+      a {
+        line-height: $height;
+        padding: 0 10px;
+        transition: background 0.3s ease-in-out;
+        font-weight: 200;
+        text-decoration: none;
+        &:hover {
+          cursor: pointer;
+          background: rgba(0,0,0,0.1);
+        }
+      }
+
+    }
+  }
 }

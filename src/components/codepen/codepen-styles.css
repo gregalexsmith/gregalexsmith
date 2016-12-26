@@ -1,0 +1,58 @@
+
+.pen-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.pen-item {
+  flex: 1 1 250px;
+  position: relative;
+  margin: 5px;
+  /*overflow: hidden;*/
+  &:nth-child(3) {
+    flex: 1 0 100%
+  }
+  .pen-caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: all  0.4s ease-in-out;
+    figcaption {
+      color: white;
+      font-size: 22px;
+      font-weight: 500;
+    }
+    i {
+      display: block;
+      color: white;
+      font-size: 1.5em;
+      margin: 0.5em;
+    }
+  }
+}
+
+
+.pen-item:hover .pen-caption {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.pen-image {
+  width: 100%;
+  height: 150px;
+  z-index: 0;
+  background-color: #eee;
+  background-position: center top;
+  background-size: fit;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

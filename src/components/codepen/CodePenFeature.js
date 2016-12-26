@@ -1,8 +1,8 @@
 import React from 'react'
 import codepenData from './featured_pens.json';
-import './codepen.css'
+import './codepen-styles.css'
 
-const CodePenFeature = (props) => {
+const CodepenFeature = (props) => {
   function renderPens() {
     return (
       codepenData.pens.map( pen => {
@@ -28,12 +28,18 @@ const CodePenFeature = (props) => {
 
   return (
     <section className="pen-section">
-      <h1>Codepen Projects</h1>
-      <div className="pen-container">
-        {renderPens()}
+      <div className="gs-section-header">
+        <div className="gs-container">
+          <h1>Codepen Projects</h1>
+        </div>
+      </div>
+      <div className="gs-container">
+        <div className="pen-container">
+          {renderPens()}
+        </div>
       </div>
     </section>
   )
 }
 
-export default CodePenFeature
+export default CodepenFeature

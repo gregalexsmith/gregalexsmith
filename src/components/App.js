@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 // import logo from '../images/logo.svg';
-import './App.css';
 import NavBar from './common/NavBar'
 
 class App extends Component {
