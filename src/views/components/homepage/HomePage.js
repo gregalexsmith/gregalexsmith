@@ -1,7 +1,8 @@
 import React from 'react'
-import About from '../about/About.js'
 import CodepenFeature from '../codepen/CodepenFeature'
 import WebsitesFeature from '../websites/WebsitesFeature'
+import About from '../about/About'
+import ContactSection from '../contact/ContactSection'
 
 class HomePage extends React.Component {
   render () {
@@ -10,6 +11,7 @@ class HomePage extends React.Component {
         <CodepenFeature />
         <WebsitesFeature />
         <About />
+        <ContactSection />
       </div>
     )
   }
