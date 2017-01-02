@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { contactActions } from '../../../core/contact';
 import ContactForm from './ContactForm';
-// import './styles.css';
+import './contact-styles.css';
 
 
 class ContactSection extends Component {
@@ -12,16 +12,16 @@ class ContactSection extends Component {
   }
 
   handleSubmit(formData) {
-    console.log("ya");
+    console.log(formData);
     this.props.submitContactForm(formData);
   }
 
   render() {
     return (
-      <div className="auth-page">
+      <section className="contact-section gs-container">
         <h1>Contact</h1>
         <ContactForm onSubmit={this.handleSubmit} />
-      </div>
+      </section>
     );
   }
 }

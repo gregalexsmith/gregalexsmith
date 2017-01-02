@@ -6,8 +6,9 @@
 .gs-section-header {
   background: #316BB0;
   h1 {
-    padding: 20px 0;
+    padding: 28px 0;
     color: white;
-    font-weight: 200;
+    font-size: 28px;
+    font-weight: 500;
   }
 }

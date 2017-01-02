@@ -9,14 +9,19 @@ class ContactForm extends React.Component {
     return (
       <form className="auth-form" onSubmit={handleSubmit}>
 
+        <Field name="name"
+          type="text"
+          label="Name"
+          component={RenderField} />
+
         <Field name="email"
           type="email"
           label="Email"
           component={RenderField} />
 
-        <Field name="password"
-          type="password"
-          label="Password"
+        <Field name="message"
+          type="textarea"
+          label="Message"
           component={RenderField} />
 
       <div>

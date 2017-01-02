@@ -1,22 +1,19 @@
 import React from 'react'
-import './about.css'
+import './about-styles.css'
 
 const About = (props) => {
   return (
-    <section className="about-section">
+    <section>
       <div className="gs-section-header">
         <div className="gs-container">
           <h1>About</h1>
         </div>
       </div>
-      <div className="gs-container">
+      <div className="gs-container about-section">
         <section>
           <h3>About Me</h3>
           <p>
-            Product developer with 3 years of experience creating hardware and software for a variety of applications.
-          </p>
-          <p>
-            Currently I am building on my experience as a web developer by working on projects with the following technologies:
+            Product developer with 3 years of experience creating hardware and software for a variety of applications. Currently I am building on my experience as a web developer by working on projects with the following technologies:
           </p>
           <p>
             <b>Front End:</b>
@@ -31,26 +28,20 @@ const About = (props) => {
             <span>VB.Net, Embedded C++</span>
           </p>
         </section>
-        <section>
+        <section className="about-social-section">
           <h3>Social Links</h3>
-          <a>
+          <a href="http://codepen.io/grsmith/" target="blank">
             <i className="fa fa-codepen"/>
             <span>Codepen</span>
           </a>
-          <a>
+          <a href="https://github.com/gregalexsmith" target="blank">
             <i className="fa fa-github"/>
             <span>GitHub</span>
           </a>
-          <a>
+          <a href="https://www.instagram.com/grsmith/" target="blank">
             <i className="fa fa-instagram"/>
             <span>Instagram</span>
           </a>
-        </section>
-        <section>
-          <h3>Send A Message</h3>
-          <form>
-            
-          </form>
         </section>
       </div>
     </section>

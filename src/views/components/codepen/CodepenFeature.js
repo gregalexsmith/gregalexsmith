@@ -13,7 +13,7 @@ const CodepenFeature = (props) => {
         }
         return (
           <figure key={pen.slug} className="pen-item">
-            <a href={penURL}>
+            <a href={penURL} target="blank">
               <div className="pen-caption">
                 <i className="fa fa-external-link"/>
                 <figcaption>{pen.name}</figcaption>
