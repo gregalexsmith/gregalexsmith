@@ -7,31 +7,26 @@ class ContactForm extends React.Component {
   render () {
     const { handleSubmit, submitting } = this.props
     return (
-      <form className="auth-form" onSubmit={handleSubmit}>
-
+      <form onSubmit={handleSubmit}>
         <Field name="name"
           type="text"
           label="Name"
           component={RenderField} />
-
         <Field name="email"
           type="email"
           label="Email"
           component={RenderField} />
-
         <Field name="message"
           type="textarea"
           label="Message"
           component={RenderField} />
-
       <div>
           <button type="submit"
             disabled={submitting}
             className="button-submit">
-            {(this.props.login) ? "Login" : "Sign Up"}
+            Send
           </button>
         </div>
-
       </form>
     );
   }

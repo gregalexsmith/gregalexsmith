@@ -4,7 +4,7 @@ import './about-styles.css'
 const About = (props) => {
   return (
     <section>
-      <div className="gs-section-header">
+      <div className="gs-section-header" id="about">
         <div className="gs-container">
           <h1>About</h1>
         </div>

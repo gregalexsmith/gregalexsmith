@@ -15,12 +15,8 @@ const WebsitesFeature = (props) => {
           </div>
           <div className="sites-info">
             <section>
-              <h3>About</h3>
-              <p>{site.about}</p>
-            </section>
-            <section>
-              <h3>Goals</h3>
-              <p>{site.about}</p>
+              <h3>Description</h3>
+              <p>{site.desc}</p>
             </section>
             <section>
               <h3>Technologies Used</h3>
@@ -44,7 +40,7 @@ const WebsitesFeature = (props) => {
     )
     return (
       <section className="sites-section">
-        <div className="gs-section-header">
+        <div className="gs-section-header" id="websites">
           <div className="gs-container">
             <h1>Websites</h1>
           </div>

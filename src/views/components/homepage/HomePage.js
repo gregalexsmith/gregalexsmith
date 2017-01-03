@@ -7,9 +7,9 @@ import ContactSection from '../contact/ContactSection'
 class HomePage extends React.Component {
   render () {
     return (
-      <div className="container">
-        <CodepenFeature />
+      <div>
         <WebsitesFeature />
+        <CodepenFeature />
         <About />
         <ContactSection />
       </div>

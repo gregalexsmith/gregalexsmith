@@ -28,7 +28,7 @@ const CodepenFeature = (props) => {
 
   return (
     <section className="pen-section">
-      <div className="gs-section-header">
+      <div className="gs-section-header" id="codepen">
         <div className="gs-container">
           <h1>Codepen Projects</h1>
         </div>

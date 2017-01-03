@@ -1,16 +1,31 @@
 import React, { Component } from 'react'
+import smoothScroll from 'smoothscroll'
 import './navbar-styles.css'
 
 class NavBar extends Component {
+  constructor(props) {
+    super(props);
+    this.scrollIntoView = this.scrollIntoView.bind(this);
+  }
+
+  scrollIntoView(target) {
+    let goto = target.target.dataset.goto;
+    console.log(goto);
+    var targetElement = document.getElementById(goto);
+    if (!!targetElement) {
+      smoothScroll(targetElement);
+    }
+  }
+
   render() {
     return (
       <nav className="nav-bar">
         <div className="nav-container gs-container">
           <h1>Greg Smith</h1>
           <div className="nav-links">
-            <a>Websites</a>
-            <a>Codepen</a>
-            <a>About</a>
+            <a onClick={this.scrollIntoView} data-goto="websites">Websites</a>
+            <a onClick={this.scrollIntoView} data-goto="codepen">Codepen</a>
+            <a onClick={this.scrollIntoView} data-goto="about">About</a>
           </div>
         </div>
       </nav>
