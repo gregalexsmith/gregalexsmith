@@ -1,14 +1,13 @@
 $text-accent: #183D68;
 
 .about-section {
-  margin-top: 10px;
-  margin-bottom: 36px;
   display: flex;
+  flex-wrap: wrap;
   section {
     flex: 1 0 100px;
-    margin: 10px 20px 0 0;
+    margin: 0px 20px 0 0;
     h3 {
-      margin: 12px 0;
+      margin: 8px 0;
       color: $text-accent;
       font-size: 24px;
       font-weight: 500;
@@ -34,17 +33,18 @@ $text-accent: #183D68;
     align-items: center;
     justify-content: flex-start;
     margin: 8px 0;
-    padding: 16px 0;
-    max-width: 300px;
-    border: 2px solid blue;
+    padding: 12px 0;
+    max-width: 280px;
+    border: 2px solid $text-accent;
     border-radius: 5px;
     font-size: 18px;
     font-weight: 500;
     text-decoration: none;
-    color: blue;
+    color: $text-accent;
     &:hover {
       cursor: pointer;
-      background: #f3f3f3;
+      background: #f7f7f7;
+      color: blue;
     }
     i {
       display: block;

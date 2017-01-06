@@ -17,10 +17,17 @@ class ContactSection extends Component {
 
   render() {
     return (
-      <section className="contact-section gs-container">
-          <h3>Contact</h3>
-          <ContactForm onSubmit={this.handleSubmit} />
-      </section>
+      <div>
+        <div className="gs-section-header" id="contact">
+          <div className="gs-container">
+            <h1>Contact</h1>
+          </div>
+        </div>
+        <section className="contact-section">
+            <p>Please use the contact form below or <a href="email greg">this link</a> to send me an email. Thanks!</p>
+            <ContactForm onSubmit={this.handleSubmit} />
+        </section>
+      </div>
     );
   }
 }

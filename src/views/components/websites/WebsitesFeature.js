@@ -7,7 +7,7 @@ import sitesData from './websites_data.json';
 
 const WebsitesFeature = (props) => {
     const renderSiteFeatures = sitesData.websites.map( (site, index) =>
-        <div className="gs-container" key={index}>
+        <div className="gs-container site-container" key={index}>
           <h2 className="sites-title">{site.title}</h2>
           <div className="sites-images">
             <img src={mmHome} alt="Media Made Website 1"/>
