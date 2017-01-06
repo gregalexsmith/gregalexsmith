@@ -1,14 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 
 const errorStyles = {
-  padding: "7px 2px",
+  padding: "5px 2px",
   color: "red"
 }
-
-// const validStyles = {
-//   padding: "7px 2px",
-//   color: "green"
-// }
 
 const iconStyles = {
   margin: "0 6px"

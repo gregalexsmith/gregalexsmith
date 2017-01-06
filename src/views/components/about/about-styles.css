@@ -6,11 +6,11 @@ $text-accent: #183D68;
   display: flex;
   section {
     flex: 1 0 100px;
-    margin: 10px;
+    margin: 10px 20px 0 0;
     h3 {
       margin: 12px 0;
       color: $text-accent;
-      font-size: 20px;
+      font-size: 24px;
       font-weight: 500;
     }
     p {

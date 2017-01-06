@@ -12,15 +12,14 @@ class ContactSection extends Component {
   }
 
   handleSubmit(formData) {
-    console.log(formData);
     this.props.submitContactForm(formData);
   }
 
   render() {
     return (
       <section className="contact-section gs-container">
-        <h1>Contact</h1>
-        <ContactForm onSubmit={this.handleSubmit} />
+          <h3>Contact</h3>
+          <ContactForm onSubmit={this.handleSubmit} />
       </section>
     );
   }

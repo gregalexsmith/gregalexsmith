@@ -39,7 +39,6 @@ module.exports = {
 };
 
 
-
 // config before publish: we're in ./packages/react-scripts/config/
 if (__dirname.indexOf(path.join('packages', 'react-scripts', 'config')) !== -1) {
   module.exports = {

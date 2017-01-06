@@ -6,7 +6,8 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "deploy": "npm run build && aws s3 sync build/ s3://gregalexsmith.com"
+    "deploy": "npm run build && aws s3 sync build/ s3://gregalexsmith.com",
+    "serve": "node server/server.js"
   },
   "devDependencies": {
     "autoprefixer": "6.5.1",
@@ -56,6 +57,8 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "mailgun-js": "^0.8.0",
     "precss": "^1.4.0",
     "react": "^15.4.0",
     "react-addons-css-transition-group": "^15.4.0",
