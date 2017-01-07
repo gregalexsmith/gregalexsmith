@@ -15,7 +15,7 @@ export function submitContactForm(formData) {
         text: formData.message
       }
     };
-    fetch('http://localhost:5000/contact', {
+    fetch('/contact', {
       method: 'post',
       headers: {
         'Accept': 'application/json',
