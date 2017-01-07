@@ -1,7 +1,8 @@
-// import {
-//   SUBMIT_CONTACT_SUCCESS,
-//   SUBMIT_CONTACT_ERROR
-// } from './action-types';
+import {reset} from 'redux-form';
+import {
+  SUBMIT_CONTACT_SUCCESS,
+  SUBMIT_CONTACT_ERROR
+} from './action-types';
 
 export function submitContactForm(formData) {
   return function(dispatch) {
@@ -21,6 +22,18 @@ export function submitContactForm(formData) {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(sendData)
+    }).then(function(response) {
+      return response.json()
+    }).then(function(json) {
+      console.log('api response', json)
+      if (json.success) {
+        dispatch({ type: SUBMIT_CONTACT_SUCCESS });
+        dispatch(reset('contactForm'));
+      } else {
+        dispatch({ type: SUBMIT_CONTACT_ERROR })
+      }
+    }).catch(function(error) {
+      dispatch({ type: SUBMIT_CONTACT_ERROR })
     })
   };
 }

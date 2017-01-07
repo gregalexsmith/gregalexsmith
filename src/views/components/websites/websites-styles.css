@@ -9,8 +9,8 @@ $text-accent: #183D68;
   padding: 8px;
   width: 100%;
   color: $text-accent;
-  font-size: 32px;
-  font-weight: 400;
+  font-size: 26px;
+  font-weight: 500;
 }
 
 .sites-images {
@@ -27,7 +27,7 @@ $text-accent: #183D68;
   flex-wrap: wrap;
   padding: 8px;
   section {
-    flex: 1 0 250px;
+    flex: 1 1 250px;
     margin: 0 20px 16px 0;
     h3 {
       margin-bottom: 2px;

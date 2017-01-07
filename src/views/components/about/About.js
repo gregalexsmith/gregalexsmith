@@ -11,17 +11,16 @@ const About = (props) => {
       </div>
       <div className="gs-container about-section">
         <section>
-          <h3>About Me</h3>
           <p>
-            Product developer with 3 years of experience creating hardware and software for a variety of applications. Currently I am building on my experience as a web developer by working on projects with the following technologies:
+            Greg is a front end developer with a background in product development and creative work. He is currently building a portfolio by completing freelance and personal projects that include the following technologies:
           </p>
           <p>
             <b>Front End:</b>
-            <span>HTML, CSS, SASS, POSTCSS, Javascript, JQuery, Angular, React, Redux, Wepack, WebAudio</span>
+            <span>HTML, CSS, SASS, POSTCSS, Javascript, React, Redux, Webpack, JQuery, Angular, WebAudio</span>
           </p>
           <p>
             <b>Back End:</b>
-            <span>Node, Express, MongoDB, MySQL, Firebase</span>
+            <span>Node, NPM, Express, MongoDB, MySQL, Firebase</span>
           </p>
           <p>
             <b>Other Experience:</b>

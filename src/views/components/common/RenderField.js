@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 
 const errorStyles = {
-  padding: "5px 2px",
-  color: "red"
+  padding: "4px 2px",
+  color: "#f77"
 }
 
 const iconStyles = {

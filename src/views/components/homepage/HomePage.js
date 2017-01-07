@@ -8,9 +8,9 @@ class HomePage extends React.Component {
   render () {
     return (
       <div>
+        <About />
         <WebsitesFeature />
         <CodepenFeature />
-        <About />
         <ContactSection />
       </div>
     )

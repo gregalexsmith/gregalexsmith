@@ -10,6 +10,11 @@ export const validate = values => {
   const errors = {};
   console.log("validating");
 
+  // NAME
+  if (inputEmpty(values.name)) {
+    errors.name = "Required";
+  }
+
   // EMAIL
   if (!values.email) {
     errors.email = 'Required';
@@ -17,9 +22,9 @@ export const validate = values => {
     errors.email = 'Invalid email address';
   }
 
-  // PASSWORD
-  if (inputEmpty(values.password)) {
-    errors.password = "Please enter a password";
+  // MESSAGE
+  if (inputEmpty(values.message)) {
+    errors.message = "Required";
   }
 
   return errors;

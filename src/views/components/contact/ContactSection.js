@@ -16,6 +16,14 @@ class ContactSection extends Component {
   }
 
   render() {
+    const {completed, success} = this.props.contact
+    const result = () => {
+      if (success) {
+        return "Thanks, I will get back to you soon!";
+      } else {
+        return "Error sending message. Please try again or use email link.";
+      }
+    }
     return (
       <div>
         <div className="gs-section-header" id="contact">
@@ -23,9 +31,12 @@ class ContactSection extends Component {
             <h1>Contact</h1>
           </div>
         </div>
-        <section className="contact-section">
-            <p>Please use the contact form below or <a href="email greg">this link</a> to send me an email. Thanks!</p>
+        <section className="contact-section gs-container">
+            <p>Please use the contact form below or <a href="mailto:gregalexsmith@gmail.com" target="_top">this link</a> to send me an email. Thanks!</p>
             <ContactForm onSubmit={this.handleSubmit} />
+            <p className="contact-result">
+              {(completed) ? result() : ""}
+            </p>
         </section>
       </div>
     );
@@ -33,10 +44,18 @@ class ContactSection extends Component {
 }
 
 ContactSection.propTypes = {
-  submitContactForm: PropTypes.func.isRequired
+  submitContactForm: PropTypes.func.isRequired,
+  contact: PropTypes.object.isRequired
 };
 
+function MapStateToProps(state) {
+  return {
+    contact: state.contact
+  }
+}
+
+
 export default connect(
-  null,
+  MapStateToProps,
   contactActions
 )(ContactSection);
