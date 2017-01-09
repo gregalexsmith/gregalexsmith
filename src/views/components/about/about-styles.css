@@ -45,7 +45,7 @@ $mobile-break: 650px;
     font-size: 18px;
     transition: all 0.2s ease-in-out;
     &:hover {
-      background: #f8f8f8;
+      background: #eee;
       color: blue;
       cursor: pointer;
     }

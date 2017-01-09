@@ -3,6 +3,7 @@ $text-accent: #183D68;
 .gs-container {
   margin: auto;
   width: 85%;
+  max-width: 1200px;
 }
 
 .gs-section-header {

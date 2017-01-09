@@ -16,15 +16,17 @@ $text-accent: #183D68;
       padding: 8px 0;
       label {
         display: block;
+        margin-bottom: 2px;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 16px;
       }
       input, textarea {
-        padding: 6px;
+        padding: 7px;
         width: 100%;
         /*max-width: 300px;*/
         border: 1px solid $text-accent;
         border-radius: 2px;
+        font-size: 16px;
       }
     }
     button[type="submit"] {
@@ -38,7 +40,7 @@ $text-accent: #183D68;
       font-weight: 500;
       font-size: 18px;
       &:hover {
-        background: #f8f8f8;
+        background: #eee;
         color: blue;
         cursor: pointer;
       }
