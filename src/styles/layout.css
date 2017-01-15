@@ -1,7 +1,7 @@
 $text-accent: #183D68;
 
 .gs-container {
-  margin: auto;
+  margin: 0 auto;
   width: 85%;
   max-width: 1200px;
 }

@@ -1,12 +1,14 @@
 $text-accent: #183D68;
 
 .site-container {
-  background: #fdfdfd;
+  margin: 8px auto;
+  padding: 0 16px;
   border: 1px solid #ccc;
+  background: #fdfdfd;
 }
 
 .sites-title {
-  padding: 8px;
+  padding: 8px 0;
   width: 100%;
   color: $text-accent;
   font-size: 26px;
@@ -15,10 +17,17 @@ $text-accent: #183D68;
 
 .sites-images {
   width: 100%;
-  padding: 0 8px;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
   img {
-    display: inline-block;
-    width: 50%;
+    /*display: inline-block;*/
+    width: 48%;
+    min-width: 300px;
+    margin: 4px auto;
+    border: 1px solid #ccc;
   }
 }
 
