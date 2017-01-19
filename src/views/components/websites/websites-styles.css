@@ -24,10 +24,16 @@ $text-accent: #183D68;
   align-items: flex-start;
   img {
     /*display: inline-block;*/
+
     width: 48%;
     min-width: 300px;
     margin: 4px auto;
     border: 1px solid #ccc;
+    @media(max-width: 450px) {
+      flex: 0 0 80%;
+      width: 80%;
+      min-width: 200px;
+    }
   }
 }
 
