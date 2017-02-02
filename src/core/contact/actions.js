@@ -4,9 +4,10 @@ import {
   SUBMIT_CONTACT_ERROR
 } from './action-types';
 
+// handle submit of email contact form
+// this react app is hosted on a simple node server that has a '/contact' endpoint for sending the email using mailgun
 export function submitContactForm(formData) {
   return function(dispatch) {
-    console.log("action data", formData);
     //Format Form Data for API
     var from = formData.name + "<" + formData.email + ">";
     var sendData = {
@@ -15,6 +16,8 @@ export function submitContactForm(formData) {
         text: formData.message
       }
     };
+
+    // post the data to the contact endpoint
     fetch('/contact', {
       method: 'post',
       headers: {
@@ -23,8 +26,10 @@ export function submitContactForm(formData) {
       },
       body: JSON.stringify(sendData)
     }).then(function(response) {
+      // convert to json
       return response.json()
     }).then(function(json) {
+      // process the response from the server
       console.log('api response', json)
       if (json.success) {
         dispatch({ type: SUBMIT_CONTACT_SUCCESS });
