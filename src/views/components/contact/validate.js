@@ -8,7 +8,7 @@ function inputEmpty(value) {
 
 export const validate = values => {
   const errors = {};
-  console.log("validating");
+  // console.log("validating");
 
   // NAME
   if (inputEmpty(values.name)) {

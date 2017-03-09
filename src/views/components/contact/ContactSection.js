@@ -32,7 +32,7 @@ class ContactSection extends Component {
           </div>
         </div>
         <section className="contact-section gs-container">
-            <p>Please use the contact form below or <a href="mailto:gregalexsmith@gmail.com" target="_top">this link</a> to send me an email. Thanks!</p>
+            <p>Please use the contact form below or <a href="mailto:gregalexsmith@gmail.com" target="_top">send me an email.</a> Thanks!</p>
             <ContactForm onSubmit={this.handleSubmit} />
             <p className="contact-result">
               {(completed) ? result() : ""}

@@ -10,14 +10,17 @@ class ContactForm extends React.Component {
       <form onSubmit={handleSubmit}>
         <Field name="name"
           type="text"
+          id="contactForm-name"
           label="Name"
           component={RenderField} />
         <Field name="email"
           type="email"
+          id="contactForm-email"
           label="Email"
           component={RenderField} />
         <Field name="message"
           type="textarea"
+          id="contactForm-message"
           label="Message"
           component={RenderField} />
       <div>

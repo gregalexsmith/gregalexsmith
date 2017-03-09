@@ -23,7 +23,7 @@ class NavBar extends Component {
         <div className="nav-container gs-container">
           <h1>Greg Smith</h1>
           <div className="nav-links">
-            <a onClick={this.scrollIntoView} data-goto="about">About</a>
+            <a onClick={this.scrollIntoView} data-goto="about">About Me</a>
             <a onClick={this.scrollIntoView} data-goto="websites">Websites</a>
             <a onClick={this.scrollIntoView} data-goto="codepen">Codepen</a>
             <a onClick={this.scrollIntoView} data-goto="contact">Contact</a>

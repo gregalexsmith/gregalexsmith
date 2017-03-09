@@ -6,7 +6,7 @@ const About = (props) => {
     <section>
       <div className="gs-section-header" id="about">
         <div className="gs-container">
-          <h1>About</h1>
+          <h1>About Me</h1>
         </div>
       </div>
       <div className="gs-container about-section">

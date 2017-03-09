@@ -11,7 +11,7 @@ const iconStyles = {
 
 class RenderField extends Component {
   render() {
-    const {input, placeholder, label, type, disabled, money, meta:{ touched, warning, error }} = this.props
+    const {input, placeholder, label, type, disabled, id, money, meta:{ touched, warning, error }} = this.props
     function renderError() {
       if (touched && error) {
         return (
@@ -35,6 +35,7 @@ class RenderField extends Component {
       if (type === "textarea") {
         return (
           <textarea {...input}
+            id={id}
             placeholder={placeholder}
             rows={10}/>
         )
@@ -42,16 +43,17 @@ class RenderField extends Component {
         return (
           <input {...input}
             type={type}
+            id={id}
             placeholder={placeholder}
             disabled={disabled}
-            className={(money) ? "input-money" : ""}/>
+            className={(money) ? "input-money" : null}/>
         )
       }
     }
 
     return (
       <div>
-        <label htmlFor={input.name}>{label}</label>
+        <label htmlFor={id}>{label}</label>
         {renderInput()}
         {renderError()}
       </div>
@@ -65,6 +67,7 @@ RenderField.propTypes = {
   label: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
+  id: PropTypes.string.isRequired,
   money: PropTypes.bool,
   meta: PropTypes.object
 };
