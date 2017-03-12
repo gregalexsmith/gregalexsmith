@@ -30,7 +30,7 @@ const WebsitesFeature = (props) => {
               </p>
             </section>
             <section>
-              <h3>Link</h3>
+              {(site.url !== "")? (<h3>Link</h3>) : ""}
               <p>
                 <a href={site.url} target="_blank">{site.url}</a>
               </p>

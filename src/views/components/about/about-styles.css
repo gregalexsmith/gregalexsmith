@@ -39,14 +39,15 @@ $mobile-break: 650px;
     width: 100%;
     border: 2px solid $text-accent;
     border-radius: 2px;
+    background: white;
     color: $text-accent;
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
     transition: all 0.2s ease-in-out;
     &:hover {
-      background: #eee;
-      color: blue;
+      background: $text-accent;
+      color: white;
       cursor: pointer;
     }
     i {

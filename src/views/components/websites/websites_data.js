@@ -7,7 +7,7 @@ export const Websites_Data = {
   "websites": [
     {
       "title" : "MediaMade",
-      "url": "https://mediamade.io",
+      "url": "",
       "desc" : "A production company connecting business owners with creators to build effective content for their brand.",
       "tech" : {
         "frontEnd" : "React, Redux, Webpack, PostCSS",

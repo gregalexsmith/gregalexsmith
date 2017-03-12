@@ -1,14 +1,17 @@
 $text-accent: #183D68;
 
 .site-container {
-  margin: 8px auto;
-  padding: 0 16px;
-  border: 1px solid #ccc;
+  margin: 24px auto;
+  padding: 8px 28px;
+  border: 1px solid #eee;
   background: #fdfdfd;
+  @media(max-width: 450px) {
+    padding: 8px 16px;
+  }
 }
 
 .sites-title {
-  padding: 8px 0;
+  padding: 8px 4px;
   width: 100%;
   color: $text-accent;
   font-size: 26px;
@@ -17,18 +20,17 @@ $text-accent: #183D68;
 
 .sites-images {
   width: 100%;
-  padding: 8px;
+  padding: 0px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   img {
     /*display: inline-block;*/
-
-    width: 48%;
+    width: 49%;
     min-width: 300px;
-    margin: 4px auto;
-    border: 1px solid #ccc;
+    margin: 4px 0;
+    border: 1px solid #eee;
     @media(max-width: 450px) {
       flex: 0 0 80%;
       width: 80%;
