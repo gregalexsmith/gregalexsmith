@@ -1,6 +1,7 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux';
-import { contactActions } from '../../../core/contact';
+import { contactActions } from '../../core/contact';
 import ContactForm from './ContactForm';
 import './contact-styles.css';
 

@@ -1,9 +1,10 @@
-import React, { PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types'
 import { Field, reduxForm } from 'redux-form'
 import RenderField from '../common/RenderField';
 import { validate, warn } from './validate';
 
-class ContactForm extends React.Component {
+class ContactForm extends Component {
   render () {
     const { handleSubmit, submitting } = this.props
     return (
