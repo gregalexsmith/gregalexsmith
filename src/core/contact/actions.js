@@ -4,41 +4,43 @@ import {
   SUBMIT_CONTACT_ERROR
 } from './action-types';
 
+const endpoint = 'https://us-central1-gregalexsmith-d7fc3.cloudfunctions.net/api'
+
 // handle submit of email contact form
-// this react app is hosted on a simple node server that has a '/contact' endpoint for sending the email using mailgun
 export function submitContactForm(formData) {
   return function(dispatch) {
-    //Format Form Data for API
-    var from = formData.name + "<" + formData.email + ">";
-    var sendData = {
-      "data": {
-        from: from,
-        text: formData.message
-      }
-    };
+    const postData = {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message
+    }
 
-    // post the data to the contact endpoint
-    fetch('/contact', {
+    fetch(endpoint + '/contact', {
       method: 'post',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(sendData)
-    }).then(function(response) {
-      // convert to json
-      return response.json()
-    }).then(function(json) {
-      // process the response from the server
-      console.log('api response', json)
-      if (json.success) {
-        dispatch({ type: SUBMIT_CONTACT_SUCCESS });
-        dispatch(reset('contactForm'));
-      } else {
-        dispatch({ type: SUBMIT_CONTACT_ERROR })
-      }
-    }).catch(function(error) {
+      body: JSON.stringify(postData)
+    })
+    .then(checkStatus)
+    .then(() => {
+      dispatch({ type: SUBMIT_CONTACT_SUCCESS });
+      dispatch(reset('contactForm'));
+    })
+    .catch(function(error) {
+      console.log(error);
       dispatch({ type: SUBMIT_CONTACT_ERROR })
     })
   };
+}
+
+function checkStatus(response) {
+  if (response.status >= 200 && response.status < 300) {
+    return response
+  } else {
+    var error = new Error(response.statusText)
+    error.response = response
+    throw error
+  }
 }

@@ -10,6 +10,6 @@ var data = {
   text: 'Testing some Mailgun awesomness!'
 };
 
-mailgun.messages().send(data, function (error, body) {
+mailgun.messages().send(data, (error, body) => {
   console.log(body);
 });
