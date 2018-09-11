@@ -1,13 +1,13 @@
 // mailer route for contact form
 // allows for post request on given route
 // verifies that data is correct and sends the email via mailgun
-
+var functions = require('firebase-functions');
 var router = require('express').Router()
 var logError = require('./utils').logError;
 
 var mailgunConfig = {
-  apiKey: 'key-f8f3443413428a6d0992e660b8e473f9',
-  domain: 'sandboxffcc3b5a90f0467a8f94e980e47cbe80.mailgun.org'
+  apiKey: functions.config().mailgun.key,
+  domain: functions.config().mailgun.domain
 };
 var mailgun = require('mailgun-js')(mailgunConfig);
 
