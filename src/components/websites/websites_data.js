@@ -1,9 +1,7 @@
-import mmHome from '../../images/mm-home.jpg'
-import mmMocks from '../../images/mm-mocks.png'
-import cirrooMusic from '../../images/cirroo-music.jpg'
-import cirrooHome from '../../images/cirroo-home.jpg'
-import soundscapeGenerator1 from '../../images/soundscape-generator1.jpg';
-import soundscapeGenerator2 from '../../images/soundscape-generator2.jpg';
+
+
+const IMG_BASE_URL = "https://storage.googleapis.com/gregalexsmith-images/"
+const withURL = imgList => imgList.map(img => IMG_BASE_URL + img);
 
 export const Websites_Data = {
   "websites": [
@@ -18,7 +16,27 @@ export const Websites_Data = {
         "frontEnd" : "React, Redux, Styled Components, Web Audio API, Google Resonance",
         "backEnd" : "Python, AWS"
       },
-      "images" : [soundscapeGenerator1, soundscapeGenerator2]
+      "images" : withURL(['soundscape-generator1.jpg', 'soundscape-generator2.jpg'])
+    },
+    {
+      "title" : "Tree Museum",
+      "url": "https://treemuseum.ca/",
+      "desc" : "Artist website and blog for local band Tree Museum. Also includes Instagram feed, show feed and splash screen",
+      "tech" : {
+        "frontEnd" : "React, PostCSS",
+        "backEnd" : "Firebase"
+      },
+      "images" : withURL(['tm-1.1.png', 'tm-2.1.png'])
+    },
+    {
+      "title" : "Pomodoro Timer",
+      "url": "https://github.com/gregalexsmith/pomodoro-timer",
+      "desc" : "A pomodoro timer build with React, styled components and gsap",
+      "tech" : {
+        "frontEnd" : "React, Styled Compoents, gsap animation",
+        "backEnd" : "Static hosting on Github Pages"
+      },
+      "images" : withURL(['pom-2.1.png', 'pom-1.1.png'])
     },
     {
       "title" : "MediaMade",
@@ -28,7 +46,7 @@ export const Websites_Data = {
         "frontEnd" : "React, Redux, Webpack, PostCSS",
         "backEnd" : "Firebase"
       },
-      "images" : [mmHome, mmMocks]
+      "images" : withURL(["mm-home.jpg", "mm-mocks.png"])
     },
     {
       "title" : "Cirroo",
@@ -38,7 +56,7 @@ export const Websites_Data = {
         "frontEnd" : "HTML5, CSS3, SASS, Gulp",
         "backEnd" : "AWS S3 Static Hosting"
       },
-      "images" : [cirrooHome, cirrooMusic]
+      "images" : withURL(['cirroo-home.jpg', 'cirroo-music.jpg'])
     }
   ]
 }
