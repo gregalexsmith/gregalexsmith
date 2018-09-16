@@ -1,9 +1,7 @@
-
-
 const IMG_BASE_URL = "https://storage.googleapis.com/gregalexsmith-images/"
 const withURL = imgList => imgList.map(img => IMG_BASE_URL + img);
 
-export const Websites_Data = {
+export default {
   "websites": [
     {
       "title" : "Soundscape Generator",

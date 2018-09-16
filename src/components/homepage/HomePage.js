@@ -1,6 +1,6 @@
 import React from 'react'
 import CodepenFeature from '../codepen/CodepenFeature'
-import WebsitesFeature from '../websites/WebsitesFeature'
+import Projects from '../projects/Projects'
 import About from '../about/About'
 import ContactSection from '../contact/ContactSection'
 
@@ -9,7 +9,7 @@ class HomePage extends React.Component {
     return (
       <div>
         <About />
-        <WebsitesFeature />
+        <Projects />
         <CodepenFeature />
         <ContactSection />
       </div>
