@@ -12,11 +12,12 @@ const About = (props) => {
       <div className="gs-container about-section">
         <section>
           <p>
-            Greg is a front end developer with a background in product development and creative work. He is currently building a portfolio by completing freelance and personal projects that include the following technologies:
+            I'm a developer and creative with a passion for building engaging experiences on the web.
+            I value thoughtful UX and design, scalable code, open collaboration, continuous learning and improving products and processes with great people.
           </p>
           <p>
             <b>Front End:</b>
-            <span>HTML, CSS, SASS, POSTCSS, Javascript, React, Redux, Webpack, JQuery, Angular, WebAudio</span>
+            <span>HTML, CSS, LESS, SASS, Javascript, React, Redux, Webpack, Gulp, JQuery, WebAudio, Karma, Mocha, Jest</span>
           </p>
           <p>
             <b>Back End:</b>
@@ -37,9 +38,9 @@ const About = (props) => {
             <i className="fa fa-github"/>
             <span>GitHub</span>
           </a>
-          <a href="https://www.instagram.com/grsmith/" target="blank">
-            <i className="fa fa-instagram"/>
-            <span>Instagram</span>
+          <a href="https://www.linkedin.com/in/gregalexsmith/" target="blank">
+            <i className="fa fa-linkedin"/>
+            <span>LinkedIn</span>
           </a>
         </section>
       </div>
