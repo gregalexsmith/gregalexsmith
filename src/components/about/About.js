@@ -42,6 +42,10 @@ const About = (props) => {
             <i className="fa fa-linkedin"/>
             <span>LinkedIn</span>
           </a>
+          <a href="https://www.instagram.com/grsmith/" target="blank">
+            <i className="fa fa-instagram"/>
+            <span>Instagram</span>
+          </a>
         </section>
       </div>
     </section>
