@@ -24,5 +24,8 @@
     "test": "react-scripts test --env=jsdom",
     "deploy": "npm run build && firebase deploy --only hosting",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "firebase-tools": "^7.6.2"
   }
 }
