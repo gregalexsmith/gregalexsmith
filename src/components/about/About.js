@@ -1,7 +1,7 @@
 import React from 'react'
 import './about-styles.css'
 
-const About = (props) => {
+const About = () => {
   return (
     <section>
       <div className="gs-section-header" id="about">
@@ -13,19 +13,19 @@ const About = (props) => {
         <section>
           <p>
             I'm a developer and creative with a passion for building engaging experiences on the web.
-            I value thoughtful UX and design, scalable code, open collaboration, continuous learning and improving products and processes with great people.
+            I value thoughtful UX and design, scalable code, open collaboration, continuous learning and improving products and processes with great teams.
           </p>
           <p>
             <b>Front End:</b>
-            <span>HTML, CSS, LESS, SASS, Javascript, React, Redux, Webpack, Gulp, JQuery, WebAudio, Karma, Mocha, Jest</span>
+            <span>React, Redux, GraphQL, Webpack, HTML, CSS, LESS, SASS, CSS-in-JS, Javascript, WebAudio, Jest, Karma, Mocha</span>
           </p>
           <p>
             <b>Back End:</b>
-            <span>Node, NPM, Express, MongoDB, MySQL, Firebase</span>
+            <span>Node, GraphQL, NPM, Express, MongoDB, MySQL, Firebase</span>
           </p>
           <p>
             <b>Other Experience:</b>
-            <span>VB.Net, Embedded C++</span>
+            <span>Docker, CircleCI, VB.Net, Embedded C++</span>
           </p>
         </section>
         <section className="about-social-section">
