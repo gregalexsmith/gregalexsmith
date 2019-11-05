@@ -1,6 +1,6 @@
 # Portfolio Website 
 
-gregalexsmith.com
+https://gregalexsmith.com
 
 [![CircleCI](https://circleci.com/gh/gregalexsmith/gregalexsmith/tree/master.svg?style=svg)](https://circleci.com/gh/gregalexsmith/gregalexsmith/tree/master)
 
