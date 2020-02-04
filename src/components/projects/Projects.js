@@ -1,7 +1,7 @@
 import React from 'react';
 import './projects-styles.css';
 
-import projectData from './projectData.js';
+import projectData from './projectData';
 
 const Projects = () => (
   <section className="sites-section">
@@ -11,7 +11,7 @@ const Projects = () => (
       </div>
     </div>
     <div className="gs-container">
-      {projectData.websites.map( (project, index) =>
+      {projectData.map( (project, index) =>
         <div className="project" key={index}>
           <h2 className="project__title">{project.title}</h2>
           <div className="project__images">
