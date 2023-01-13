@@ -28,7 +28,7 @@ export default function Index({ allPosts }: Props) {
                   <Link
                     as={`/posts/${slug}`}
                     href="/posts/[slug]"
-                    className="hover:underline">
+                    className="text-blue-700 hover:underline dark:text-blue-500 ">
                     {title}
                   </Link>
                 </div>
