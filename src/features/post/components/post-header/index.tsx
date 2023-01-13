@@ -1,3 +1,5 @@
+import classNames from 'classnames';
+
 type Props = {
   title: string;
   date: string;
@@ -15,10 +17,17 @@ const formatDate = (date: Date | string) => {
 export const PostHeader = ({ title, date }: Props) => {
   return (
     <>
-      <h1 className="mb-12 text-center text-5xl font-bold leading-tight tracking-tighter md:text-left md:text-7xl md:leading-none lg:text-8xl">
+      <h1
+        className={classNames(
+          'mt-12 mb-12 text-center',
+          'font-bold leading-tight tracking-tighter',
+          'text-3xl',
+          'md:text-left md:text-4xl md:leading-none',
+          'lg:text-5xl'
+        )}>
         {title}
       </h1>
-      <div className="mx-auto max-w-2xl">
+      <div>
         <div className="mb-6 text-lg">
           <time dateTime={date}>{formatDate(date)}</time>
         </div>
