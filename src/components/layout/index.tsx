@@ -24,6 +24,7 @@ export const Layout = ({ children, breadcrumbs }: LayoutProps) => {
           <NavSimple title={<Link href="/">{websiteTitle}</Link>}>
             <div className="flex gap-4">
               <Link href="/">Home</Link>
+              <Link href="/posts">Posts</Link>
             </div>
           </NavSimple>
         </header>
