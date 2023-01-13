@@ -32,8 +32,7 @@ export default function Post({ post }: Props) {
           <>
             <article className="pb-32">
               <Head>
-                <title>{post.title} | Next.js Blog Example with Markdown</title>
-                <meta property="og:image" content={post.ogImage.url} />
+                <title>{post.title}</title>
               </Head>
               <PostHeader title={post.title} date={post.date} />
               <PostBody content={post.content} />
