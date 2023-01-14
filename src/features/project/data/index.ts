@@ -1,42 +1,77 @@
-const IMG_BASE_URL = 'https://storage.googleapis.com/gregalexsmith-images/';
-const withURL = (imgList: string[]) => imgList.map((img) => IMG_BASE_URL + img);
+type ProjectLink = 'Live Site' | 'Github' | 'Product Hunt' | 'Storybook';
 
-export const projectsData = [
+type Project = {
+  title: string;
+  description: string;
+  tech?: {
+    frontEnd: string;
+    backEnd: string;
+  };
+  links?: { name: ProjectLink; url: string }[];
+};
+
+export const projectsData: Project[] = [
+  {
+    title: 'Sun Time',
+    description:
+      'A simple sun tracking app and visualization for sunrise/sunset times 🌄',
+    links: [
+      { name: 'Live Site', url: 'https://sun-time.co' },
+      {
+        name: 'Product Hunt',
+        url: 'https://www.producthunt.com/posts/suntime-2'
+      }
+    ]
+  },
+  {
+    title: 'Dev Tools Monorepo',
+    description:
+      'A collection of tools for developing web apps. Includes a component lib, helpers and more',
+    links: [
+      { name: 'Github', url: 'https://github.com/gregalexsmith/dev-tools' },
+      {
+        name: 'Storybook',
+        url: 'https://dev-tools-components.netlify.app'
+      }
+    ]
+  },
   {
     title: 'Chord Progressions App',
-    url: 'https://chordapp-dev.netlify.com/',
     description: 'Explore and practice chord progressions on the web',
     tech: {
       frontEnd: 'React, Tone.js, Ramda, Recompose',
       backEnd: 'Netlify'
     },
-    images: withURL(['chord-prog-1.jpg', 'chord-prog-2.jpg'])
+    links: [{ name: 'Live Site', url: 'https://chordapp-dev.netlify.com/' }]
   },
   {
     title: 'Tree Museum',
-    url: 'https://treemuseum.ca/',
     description:
       'Artist website and blog for local band Tree Museum. Includes splash page, Instagram integration, show feed and contact form.',
     tech: {
       frontEnd: 'React, PostCSS',
       backEnd: 'Firebase'
     },
-    images: withURL(['tm-1.1.png', 'tm-2.1.png'])
+    links: [{ name: 'Live Site', url: 'https://treemuseum.ca/' }]
   },
   {
     title: 'Pomodoro Timer',
-    url: 'https://gregalexsmith.github.io/pomodoro-timer/',
     description:
       'An animated pomodoro timer build with React, styled components and gsap',
     tech: {
       frontEnd: 'React, Styled Components, gsap animation',
       backEnd: 'Static hosting on Github Pages'
     },
-    images: withURL(['pom-2.1.png', 'pom-1.1.png'])
+    links: [
+      {
+        name: 'Live Site',
+        url: 'https://gregalexsmith.github.io/pomodoro-timer/'
+      },
+      { name: 'Github', url: 'https://github.com/gregalexsmith/pomodoro-timer' }
+    ]
   },
   {
     title: 'Soundscape Generator',
-    url: 'https://github.com/amaclean199/soundscape-generator',
     description: `
       Generate an audio backdrop for an image or video using image recognition and open source sounds. 
       Hackathon project with <a href="http://www.alexmaclean.ca/" target="_blank">Alex MacLean</a>.
@@ -46,28 +81,21 @@ export const projectsData = [
         'React, Redux, Styled Components, Web Audio API, Google Resonance',
       backEnd: 'Python, AWS'
     },
-    images: withURL(['soundscape-generator1.jpg', 'soundscape-generator2.jpg'])
-  },
-  {
-    title: 'MediaMade',
-    url: '',
-    description:
-      'A production company connecting business owners with creators to build effective content for their brand.',
-    tech: {
-      frontEnd: 'React, Redux, Webpack, PostCSS',
-      backEnd: 'Firebase'
-    },
-    images: withURL(['mm-home.jpg', 'mm-mocks.png'])
+    links: [
+      {
+        name: 'Github',
+        url: 'https://github.com/amaclean199/soundscape-generator'
+      }
+    ]
   },
   {
     title: 'Cirroo',
-    url: 'http://cirroo.com',
     description:
       'Artist page for electronic musician Cirroo. Showcase new album while providing links for contact and other releases.',
     tech: {
       frontEnd: 'HTML5, CSS3, SASS, Gulp',
       backEnd: 'AWS S3 Static Hosting'
     },
-    images: withURL(['cirroo-home.jpg', 'cirroo-music.jpg'])
+    links: [{ name: 'Live Site', url: 'http://cirroo.com' }]
   }
 ];

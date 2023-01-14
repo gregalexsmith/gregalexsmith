@@ -13,7 +13,17 @@ export const Projects = () => {
             dangerouslySetInnerHTML={{ __html: project.description }}
             className="mb-1"
           />
-          {project.url && <Link href={project.url}>View Project</Link>}
+          <div className="flex gap-2">
+            {project.links &&
+              project.links.map(
+                (link) =>
+                  link.url && (
+                    <Link key={link.url} href={link.url}>
+                      {link.name}
+                    </Link>
+                  )
+              )}
+          </div>
         </div>
       ))}
     </div>
