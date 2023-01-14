@@ -32,7 +32,7 @@ export const Layout = ({ children, breadcrumbs }: LayoutProps) => {
       </SingleColumn>
 
       <main>
-        <SingleColumn className="max-w-3xl">
+        <SingleColumn className="max-w-3xl pb-12">
           {breadcrumbs && <div className="mb-2">{breadcrumbs}</div>}
           {children}
         </SingleColumn>
