@@ -51,3 +51,7 @@ Safe to: use, update, change, release, forget about
 Choosing a standard (that’s been around for awhile and not shrinking) means more builders, community, common knowledge and some peace of mind about the future.
 
 _Code language, file format, communication standards_
+
+### Place Bets
+
+New tech and ways of working can bring a lot of productivity, joy and energy to the process. But try to balance bringing these in with the chance they’re just a temporary trend, or just mask other necessary work.
