@@ -4,7 +4,7 @@ excerpt: "Working theory - We can use 5 categories to break down how software cr
 date: "Feb 12 2023"
 ---
 
-_Working theory - We can use 5 categories to break down how software creates value. We could probably apply these to technologies as a whole, but they’re also a reflection of my experienced and interests at the moment (software & the web)._
+_Working theory - We can use 5 categories to break down how software creates value. They could probably applied to technologies as a whole, but this is a reflection of my experienced so far and interests at the moment (software & the web)._
 
 ## Productivity
 
