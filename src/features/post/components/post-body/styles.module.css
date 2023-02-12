@@ -20,3 +20,8 @@
 .markdown em {
   @apply text-gray-500;
 }
+
+.markdown ul,
+.markdown ol {
+  @apply list-disc pl-5;
+}
