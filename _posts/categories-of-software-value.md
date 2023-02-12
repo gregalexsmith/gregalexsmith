@@ -1,6 +1,6 @@
 ---
 title: "5 Categories of Software Value"
-excerpt: "Working theory - The value of software can be broken down into 5 categories."
+excerpt: "Working theory - We can use 5 categories to break down how software creates value"
 date: "Feb 12 2023"
 ---
 
