@@ -10,7 +10,7 @@ _Working theory - We can use 5 categories to break down how software creates val
 
 Software increases automation, distribution, parallelization, systematization, network effects and more, which all increase the productivity of making or maintaining things.
 
-_It’s easier to **\_** with software._
+_It’s easier to \_\_\_\_\_\_\_ with software._
 
 ## Certainty
 
