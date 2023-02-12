@@ -14,7 +14,7 @@ _It’s easier to \_\_\_\_\_\_\_ with software._
 
 ## Certainty
 
-We want to understand our current world and how we got here. Software assists here this though systematization, recording, logging, data aggregation and storage.
+We want to understand our current world and how we got here. Software assists this though systematization, recording, logging, data aggregation and storage.
 
 _We know what’s happened and what we have now._
 
@@ -26,13 +26,13 @@ _We can make better informed decisions_
 
 ## Access
 
-Shared understanding, opportunity, and increased optionality can all be positively impacted by software with increased distribution (mostly the internet).
+Shared understanding, opportunity, and optionality can all be positively impacted by software with increased distribution (mostly the internet).
 
 _It’s easier to learn, use, contribute and distribute with software_
 
 ## Connection
 
-Related to access, software makes connection easier by making collaboration, community, and relationships more available.
+Related to access, software enables us to connect by making collaboration, community, and relationships more available.
 
 _We can work together and connect with others_
 
