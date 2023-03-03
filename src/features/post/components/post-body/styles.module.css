@@ -3,14 +3,26 @@
 }
 
 .markdown p,
-.markdown ul,
-.markdown ol,
 .markdown blockquote {
-  @apply my-1;
+  @apply mb-2 mt-1;
+}
+
+.markdown p + p {
+  @apply mt-4 mb-0;
+}
+
+.markdown ul,
+.markdown ol {
+  @apply mt-1 mb-2;
+  @apply list-disc pl-5;
+}
+
+.markdown ul + p {
+  @apply mt-4;
 }
 
 .markdown h2 {
-  @apply mt-12 mb-4 text-3xl font-bold leading-snug;
+  @apply mt-6 mb-0 text-3xl font-bold leading-snug;
 }
 
 .markdown h3 {
@@ -19,9 +31,4 @@
 
 .markdown em {
   @apply text-gray-500;
-}
-
-.markdown ul,
-.markdown ol {
-  @apply list-disc pl-5;
 }
