@@ -1,7 +1,7 @@
 ---
 title: "Book Notes - Thinking in Systems"
 excerpt: "Takeaways from reading “Thinking in Systems” by Donella H. Meadows"
-date: "March 12 2023"
+date: "March 2 2023"
 ---
 
 _These are some takeaways from reading “Thinking in Systems” by Donella H. Meadows. I'm mainly focusing on trying to get a basic grasp of how to think about complex systems. So mostly high level definitions and notes so far, with room to learn and dig into more later_
