@@ -8,11 +8,11 @@ export const profileData = {
     { name: 'Twitter', url: 'https://twitter.com/gregs_online' },
     {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/gregalexsmith/'
+      url: 'https://www.linkedin.com/in/gregalexsmith/',
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/grsmith/'
-    }
-  ]
+      url: 'https://www.instagram.com/grsmith/',
+    },
+  ],
 } as const;

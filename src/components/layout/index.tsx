@@ -13,7 +13,7 @@ const websiteTitle = 'Greg Smith';
 
 export const Layout = ({ children, breadcrumbs }: LayoutProps) => {
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-slate-100">
       <Head>
         <title>{websiteTitle}</title>
         <meta charSet="utf-8" />
@@ -24,8 +24,8 @@ export const Layout = ({ children, breadcrumbs }: LayoutProps) => {
           <NavSimple title={<Link href="/">{websiteTitle}</Link>}>
             <div className="flex gap-4">
               <Link href="/">Home</Link>
-              <Link href="/posts">Posts</Link>
               <Link href="/projects">Projects</Link>
+              <Link href="/posts">Posts</Link>
             </div>
           </NavSimple>
         </header>

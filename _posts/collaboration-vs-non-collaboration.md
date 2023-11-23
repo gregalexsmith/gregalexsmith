@@ -1,7 +1,7 @@
 ---
-title: "Collaboration vs Non-Collaboration"
-excerpt: "Teams who decide what they’re going to build collaboratively are able to deliver value with increased velocity and quality over time"
-date: "March 12 2023"
+title: 'Collaboration vs Non-Collaboration'
+excerpt: 'Teams who decide what they’re going to build collaboratively are able to deliver value with increased velocity and quality over time'
+date: 'March 12 2023'
 ---
 
 _Working theory_ - Teams who **decide what they’re going to build collaboratively** are able to deliver value with increased velocity and quality over time. Even with the correct domain expertise, a non-collaborative environment can lead to several classic pitfalls.

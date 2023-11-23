@@ -1,7 +1,7 @@
 ---
-title: "5 Categories of Software Value"
-excerpt: "Working theory - We can use 5 categories to break down how software creates value"
-date: "Feb 12 2023"
+title: '5 Categories of Software Value'
+excerpt: 'Working theory - We can use 5 categories to break down how software creates value'
+date: 'Feb 12 2023'
 ---
 
 _Working theory - We can use 5 categories to break down how software creates value. They could probably applied to technologies as a whole, but this is a reflection of my experienced so far and interests at the moment (software & the web)._

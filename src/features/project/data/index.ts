@@ -12,6 +12,28 @@ type Project = {
 
 export const projectsData: Project[] = [
   {
+    title: 'Next.js + RSC',
+    description:
+      'A collection of experiments with Next.js and React Server Components',
+    links: [
+      {
+        name: 'Github',
+        url: 'https://github.com/gregalexsmith/next-experiements',
+      },
+    ],
+  },
+  {
+    title: 'rp2040-sensor-display',
+    description:
+      'A sensor board using CircuitPython and the Adafruit Feather Series',
+    links: [
+      {
+        name: 'Github',
+        url: 'https://github.com/gregalexsmith/rp2040-sensor-display',
+      },
+    ],
+  },
+  {
     title: 'Sun Time',
     description:
       'A simple sun tracking app and visualization for sunrise/sunset times 🌄',
@@ -19,9 +41,9 @@ export const projectsData: Project[] = [
       { name: 'Live Site', url: 'https://sun-time.co' },
       {
         name: 'Product Hunt',
-        url: 'https://www.producthunt.com/posts/suntime-2'
-      }
-    ]
+        url: 'https://www.producthunt.com/products/suntime-2',
+      },
+    ],
   },
   {
     title: 'Dev Tools Monorepo',
@@ -31,18 +53,18 @@ export const projectsData: Project[] = [
       { name: 'Github', url: 'https://github.com/gregalexsmith/dev-tools' },
       {
         name: 'Storybook',
-        url: 'https://dev-tools-components.netlify.app'
-      }
-    ]
+        url: 'https://dev-tools-components.netlify.app',
+      },
+    ],
   },
   {
     title: 'Chord Progressions App',
     description: 'Explore and practice chord progressions on the web',
     tech: {
       frontEnd: 'React, Tone.js, Ramda, Recompose',
-      backEnd: 'Netlify'
+      backEnd: 'Netlify',
     },
-    links: [{ name: 'Live Site', url: 'https://chordapp-dev.netlify.com/' }]
+    links: [{ name: 'Live Site', url: 'https://chordapp-dev.netlify.com/' }],
   },
   {
     title: 'Tree Museum',
@@ -50,9 +72,9 @@ export const projectsData: Project[] = [
       'Artist website and blog for local band Tree Museum. Includes splash page, Instagram integration, show feed and contact form.',
     tech: {
       frontEnd: 'React, PostCSS',
-      backEnd: 'Firebase'
+      backEnd: 'Firebase',
     },
-    links: [{ name: 'Live Site', url: 'https://treemuseum.ca/' }]
+    links: [{ name: 'Live Site', url: 'https://treemuseum.ca/' }],
   },
   {
     title: 'Pomodoro Timer',
@@ -60,15 +82,18 @@ export const projectsData: Project[] = [
       'An animated pomodoro timer build with React, styled components and gsap',
     tech: {
       frontEnd: 'React, Styled Components, gsap animation',
-      backEnd: 'Static hosting on Github Pages'
+      backEnd: 'Static hosting on Github Pages',
     },
     links: [
       {
         name: 'Live Site',
-        url: 'https://gregalexsmith.github.io/pomodoro-timer/'
+        url: 'https://gregalexsmith.github.io/pomodoro-timer/',
       },
-      { name: 'Github', url: 'https://github.com/gregalexsmith/pomodoro-timer' }
-    ]
+      {
+        name: 'Github',
+        url: 'https://github.com/gregalexsmith/pomodoro-timer',
+      },
+    ],
   },
   {
     title: 'Soundscape Generator',
@@ -79,14 +104,14 @@ export const projectsData: Project[] = [
     tech: {
       frontEnd:
         'React, Redux, Styled Components, Web Audio API, Google Resonance',
-      backEnd: 'Python, AWS'
+      backEnd: 'Python, AWS',
     },
     links: [
       {
         name: 'Github',
-        url: 'https://github.com/amaclean199/soundscape-generator'
-      }
-    ]
+        url: 'https://github.com/amaclean199/soundscape-generator',
+      },
+    ],
   },
   {
     title: 'Cirroo',
@@ -94,8 +119,8 @@ export const projectsData: Project[] = [
       'Artist page for electronic musician Cirroo. Showcase new album while providing links for contact and other releases.',
     tech: {
       frontEnd: 'HTML5, CSS3, SASS, Gulp',
-      backEnd: 'AWS S3 Static Hosting'
+      backEnd: 'AWS S3 Static Hosting',
     },
-    links: [{ name: 'Live Site', url: 'http://cirroo.com' }]
-  }
+    links: [{ name: 'Live Site', url: 'http://cirroo.com' }],
+  },
 ];

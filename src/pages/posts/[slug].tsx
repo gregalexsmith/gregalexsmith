@@ -7,7 +7,7 @@ import {
   getPostBySlug,
   PostBody,
   PostHeader,
-  PostType
+  PostType,
 } from '../../features';
 import { markdownToHtml } from '../../helpers';
 
@@ -58,7 +58,7 @@ export async function getStaticProps({ params }: Params) {
     'author',
     'content',
     'ogImage',
-    'coverImage'
+    'coverImage',
   ]);
 
   const content = await markdownToHtml(post.content || '');
@@ -67,9 +67,9 @@ export async function getStaticProps({ params }: Params) {
     props: {
       post: {
         ...post,
-        content
-      }
-    }
+        content,
+      },
+    },
   };
 }
 
@@ -80,10 +80,10 @@ export async function getStaticPaths() {
     paths: posts.map((post) => {
       return {
         params: {
-          slug: post.slug
-        }
+          slug: post.slug,
+        },
       };
     }),
-    fallback: false
+    fallback: false,
   };
 }
