@@ -41,7 +41,7 @@ export const projectsData: Project[] = [
       { name: 'Live Site', url: 'https://sun-time.co' },
       {
         name: 'Product Hunt',
-        url: 'https://www.producthunt.com/posts/suntime-2',
+        url: 'https://www.producthunt.com/products/suntime-2',
       },
     ],
   },

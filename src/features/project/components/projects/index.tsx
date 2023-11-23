@@ -1,4 +1,3 @@
-import { Link } from '@gregalexsmith/components';
 import { projectsData } from '../../data';
 
 export const Projects = () => {
@@ -18,9 +17,15 @@ export const Projects = () => {
               project.links.map(
                 (link) =>
                   link.url && (
-                    <Link key={link.url} href={link.url}>
+                    <a
+                      key={link.url}
+                      href={link.url}
+                      target="_blank"
+                      className="text-blue-500 hover:text-blue-700"
+                      rel="noopener noreferrer"
+                    >
                       {link.name}
-                    </Link>
+                    </a>
                   ),
               )}
           </div>
