@@ -3,10 +3,10 @@ module.exports = {
   presets: [require('@gregalexsmith/components/tailwind.config')],
   content: [
     './src/**/*.{js,ts,jsx,tsx}',
-    'node_modules/@gregalexsmith/components/**/*.{ts,tsx,js,jsx}'
+    'node_modules/@gregalexsmith/components/**/*.{ts,tsx,js,jsx}',
   ],
   theme: {
-    extend: {}
+    extend: {},
   },
-  plugins: []
+  plugins: [],
 };

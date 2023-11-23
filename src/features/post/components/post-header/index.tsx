@@ -10,7 +10,7 @@ const formatDate = (date: Date | string) => {
   return d.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'short',
-    day: 'numeric'
+    day: 'numeric',
   });
 };
 
@@ -23,8 +23,9 @@ export const PostHeader = ({ title, date }: Props) => {
           'font-bold leading-tight tracking-tighter',
           'text-3xl',
           'md:text-left md:text-4xl md:leading-none',
-          'lg:text-5xl'
-        )}>
+          'lg:text-5xl',
+        )}
+      >
         {title}
       </h1>
       <div>

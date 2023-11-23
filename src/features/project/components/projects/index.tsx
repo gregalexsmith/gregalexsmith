@@ -21,7 +21,7 @@ export const Projects = () => {
                     <Link key={link.url} href={link.url}>
                       {link.name}
                     </Link>
-                  )
+                  ),
               )}
           </div>
         </div>

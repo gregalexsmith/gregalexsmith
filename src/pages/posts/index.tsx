@@ -28,7 +28,8 @@ export default function Index({ allPosts }: Props) {
                   <Link
                     as={`/posts/${slug}`}
                     href="/posts/[slug]"
-                    className="text-blue-700 hover:underline dark:text-blue-500 ">
+                    className="text-blue-700 hover:underline dark:text-blue-500 "
+                  >
                     {title}
                   </Link>
                 </div>
@@ -48,10 +49,10 @@ export const getStaticProps = async () => {
     'slug',
     'author',
     'coverImage',
-    'excerpt'
+    'excerpt',
   ]);
 
   return {
-    props: { allPosts }
+    props: { allPosts },
   };
 };
