@@ -12,6 +12,28 @@ type Project = {
 
 export const projectsData: Project[] = [
   {
+    title: 'Next.js + RSC',
+    description:
+      'A collection of experiments with Next.js and React Server Components',
+    links: [
+      {
+        name: 'Github',
+        url: 'https://github.com/gregalexsmith/next-experiements',
+      },
+    ],
+  },
+  {
+    title: 'rp2040-sensor-display',
+    description:
+      'A sensor board using CircuitPython and the Adafruit Feather Series',
+    links: [
+      {
+        name: 'Github',
+        url: 'https://github.com/gregalexsmith/rp2040-sensor-display',
+      },
+    ],
+  },
+  {
     title: 'Sun Time',
     description:
       'A simple sun tracking app and visualization for sunrise/sunset times 🌄',
