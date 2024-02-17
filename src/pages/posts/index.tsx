@@ -15,9 +15,9 @@ export default function Index({ allPosts }: Props) {
           <title>Posts - Greg Smith</title>
         </Head>
         <div>
-          <section className="mt-8 mb-8 flex flex-col items-center md:flex-row md:justify-between">
+          <section className="mt-8 mb-8 flex flex-col md:flex-row md:justify-between">
             <h2 className="text-5xl font-bold leading-tight tracking-tighter">
-              Posts.
+              Posts
             </h2>
           </section>
 

@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
-import { NavSimple, SingleColumn } from '@gregalexsmith/components';
 import Head from 'next/head';
 import Link from 'next/link';
+import { SingleColumn } from '../single-column';
 
 type LayoutProps = {
   children?: ReactNode;
@@ -21,13 +21,16 @@ export const Layout = ({ children, breadcrumbs }: LayoutProps) => {
       </Head>
       <SingleColumn className="max-w-3xl">
         <header>
-          <NavSimple title={<Link href="/">{websiteTitle}</Link>}>
+          <div className="flex items-center">
+            <h1 className="flex-grow py-3 text-lg font-bold text-neutral-600">
+              <Link href="/">{websiteTitle}</Link>
+            </h1>
             <div className="flex gap-4">
               <Link href="/">Home</Link>
               <Link href="/projects">Projects</Link>
               <Link href="/posts">Posts</Link>
             </div>
-          </NavSimple>
+          </div>
         </header>
       </SingleColumn>
 
