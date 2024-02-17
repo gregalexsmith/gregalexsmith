@@ -10,9 +10,7 @@ export default function Index() {
           <title>Projects - Greg Smith</title>
         </Head>
         <div>
-          <h2 className="mt-8 mb-4 text-5xl font-bold leading-tight tracking-tighter">
-            Projects
-          </h2>
+          <h2 className="title1">Projects</h2>
           <Projects />
         </div>
       </Layout>

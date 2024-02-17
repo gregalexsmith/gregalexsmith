@@ -5,3 +5,8 @@
 a:hover {
   text-decoration: underline;
 }
+
+.title1 {
+  @apply text-5xl font-bold leading-tight tracking-tighter;
+  @apply mt-8 mb-4;
+}

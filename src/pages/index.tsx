@@ -11,7 +11,7 @@ export default function Index() {
           <title>Greg Smith</title>
         </Head>
         <div>
-          <h2 className="mt-8 mb-4 text-4xl font-bold leading-tight">About</h2>
+          <h2 className="title1">About</h2>
           <p>{profileData.about}</p>
           <SocialLinks />
         </div>

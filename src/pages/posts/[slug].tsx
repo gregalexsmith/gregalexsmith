@@ -25,7 +25,6 @@ export default function Post({ post }: Props) {
   return (
     <Layout>
       <div>
-        {/* <Header /> */}
         {router.isFallback ? (
           <h1>Loading…</h1>
         ) : (
