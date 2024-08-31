@@ -13,6 +13,21 @@ type Project = {
 
 export const projects: Project[] = [
   {
+    title: 'Chords',
+    description: 'A chord based instrument built on web technologies',
+    links: [
+      {
+        name: 'Website',
+        url: 'https://chords.windmirror.studio/player',
+      },
+    ],
+    images: [
+      '/images/projects/chords-1.png',
+      '/images/projects/chords-2.png',
+      '/images/projects/chords-3.png',
+    ],
+  },
+  {
     title: 'workers-hono-api',
     description:
       'An example API with authentication and OpenAPI documentation using Cloudflare Workers, Hono, Cloudflare D1 and Lucia',
@@ -22,7 +37,7 @@ export const projects: Project[] = [
         url: 'https://github.com/gregalexsmith/workers-hono-api',
       },
     ],
-    images: ['/images/projects/workers-hono-api-1.png'],
+    images: ['/images/projects/workers-hono-api-2.png'],
   },
   {
     title: 'Next.js + RSC',
