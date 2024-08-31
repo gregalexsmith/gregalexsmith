@@ -24,9 +24,9 @@ export default function Layout({ children }: LayoutProps) {
                   <Link href="/">Greg Smith</Link>
                 </h1>
                 <div className="flex gap-4">
-                  <Link href="/">Home</Link>
                   <Link href="/projects">Projects</Link>
                   <Link href="/posts">Posts</Link>
+                  <Link href="/about">About</Link>
                 </div>
               </div>
             </header>
