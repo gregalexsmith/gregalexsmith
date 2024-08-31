@@ -1,5 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 .yalc
@@ -18,6 +16,7 @@ yalc.lock
 # misc
 .DS_Store
 *.pem
+TODO.md
 
 # debug
 npm-debug.log*

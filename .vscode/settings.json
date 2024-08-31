@@ -1,8 +1,4 @@
 {
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[json]": {
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": false
-  }
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
