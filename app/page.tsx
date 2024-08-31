@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 
 export default async function Page() {
   return (
-    <div>
-      <h2 className="title3">Links</h2>
+    <>
+      <h2 className="title3 mt-8 mb-4">Links</h2>
       <div className="mt-2 flex gap-3">
         {links.map((link) => (
           <a href={link.url} key={link.url} className="link">
@@ -19,7 +19,7 @@ export default async function Page() {
         ))}
       </div>
 
-      <h2 className="flex justify-between items-center mt-8">
+      <h2 className="flex justify-between items-center mt-12 mb-6">
         <span className="title3 m-0">Featured Projects</span>
         <Link href="/projects" className="link">
           View all
@@ -28,6 +28,6 @@ export default async function Page() {
       <div className="mt-2">
         <ProjectsList limit={3} />
       </div>
-    </div>
+    </>
   );
 }
