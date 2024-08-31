@@ -1,4 +1,4 @@
-type ProjectLink = 'Live Site' | 'Github' | 'Product Hunt' | 'Storybook';
+type ProjectLink = 'Website' | 'Github' | 'Product Hunt' | 'Storybook';
 
 type Project = {
   title: string;
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     description:
       'A simple sun tracking app and visualization for sunrise/sunset times 🌄',
     links: [
-      { name: 'Live Site', url: 'https://sun-time.co' },
+      { name: 'Website', url: 'https://sun-time.co' },
       {
         name: 'Product Hunt',
         url: 'https://www.producthunt.com/products/suntime-2',
@@ -64,7 +64,7 @@ export const projects: Project[] = [
       frontEnd: 'React, Tone.js, Ramda, Recompose',
       backEnd: 'Netlify',
     },
-    links: [{ name: 'Live Site', url: 'https://chordapp-dev.netlify.com/' }],
+    links: [{ name: 'Website', url: 'https://chordapp-dev.netlify.com/' }],
   },
   {
     title: 'Tree Museum',
@@ -74,7 +74,7 @@ export const projects: Project[] = [
       frontEnd: 'React, PostCSS',
       backEnd: 'Firebase',
     },
-    links: [{ name: 'Live Site', url: 'https://treemuseum.ca/' }],
+    links: [{ name: 'Website', url: 'https://treemuseum.ca/' }],
   },
   {
     title: 'Pomodoro Timer',
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     },
     links: [
       {
-        name: 'Live Site',
+        name: 'Website',
         url: 'https://gregalexsmith.github.io/pomodoro-timer/',
       },
       {
@@ -121,6 +121,6 @@ export const projects: Project[] = [
       frontEnd: 'HTML5, CSS3, SASS, Gulp',
       backEnd: 'AWS S3 Static Hosting',
     },
-    links: [{ name: 'Live Site', url: 'http://cirroo.com' }],
+    links: [{ name: 'Website', url: 'http://cirroo.com' }],
   },
 ];
