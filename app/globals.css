@@ -24,6 +24,19 @@ a:hover {
 
   .card-surface {
     @apply bg-white dark:bg-gray-950;
-    /* box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 8px; */
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors;
+    @apply focus-visible:outline-none focus-visible:ring-1;
+    @apply disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .btn-icon {
+    @apply p-2 rounded-md;
+  }
+
+  .btn-ghost {
+    @apply text-blue-900 dark:text-blue-400 hover:bg-blue-50 focus-visible:bg-blue-50 dark:hover:text-blue-300;
   }
 }

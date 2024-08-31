@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { projects } from '@/data/project';
-import Image from 'next/image';
+import ImageGallery from './project-image-gallery';
 
 export default function ProjectsPage() {
   return (
@@ -17,21 +17,22 @@ export default function ProjectsPage() {
               className="mb-6 card-surface rounded-lg p-4 sm:p-6"
             >
               <h3 className="text-2xl font-bold mb-1">{project.title}</h3>
-              {project.images && (
+              <ImageGallery project={project} />
+              {/* {project.images && (
                 <div className="flex justify-items-start gap-3 py-4">
                   {project.images.map((img) => (
                     <div key={img} className="relative h-[140px] flex-[100px]">
                       <Image
                         key={img}
                         src={img}
-                        className="object-scale-down"
+                        className="object-cover object-top rounded-lg"
                         fill
                         alt={project.title}
                       />
                     </div>
                   ))}
                 </div>
-              )}
+              )} */}
               <p
                 dangerouslySetInnerHTML={{ __html: project.description }}
                 className="mb-1"

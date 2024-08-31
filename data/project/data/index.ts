@@ -13,6 +13,18 @@ type Project = {
 
 export const projects: Project[] = [
   {
+    title: 'workers-hono-api',
+    description:
+      'An example API with authentication and OpenAPI documentation using Cloudflare Workers, Hono, Cloudflare D1 and Lucia',
+    links: [
+      {
+        name: 'Github',
+        url: 'https://github.com/gregalexsmith/workers-hono-api',
+      },
+    ],
+    images: ['/images/projects/workers-hono-api-1.png'],
+  },
+  {
     title: 'Next.js + RSC',
     description:
       'A collection of experiments with Next.js and React Server Components',
@@ -92,7 +104,7 @@ export const projects: Project[] = [
     links: [
       {
         name: 'Website',
-        url: 'https://gregalexsmith.github.io/pomodoro-timer/',
+        url: 'https://pomodoro-timer-a42.pages.dev/',
       },
       {
         name: 'Github',
