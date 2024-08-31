@@ -8,6 +8,7 @@ type Project = {
     backEnd: string;
   };
   links?: { name: ProjectLink; url: string }[];
+  images?: string[];
 };
 
 export const projects: Project[] = [
@@ -43,6 +44,10 @@ export const projects: Project[] = [
         name: 'Product Hunt',
         url: 'https://www.producthunt.com/products/suntime-2',
       },
+    ],
+    images: [
+      '/images/projects/sun-time-1.png',
+      '/images/projects/sun-time-2.png',
     ],
   },
   {
@@ -94,6 +99,10 @@ export const projects: Project[] = [
         url: 'https://github.com/gregalexsmith/pomodoro-timer',
       },
     ],
+    images: [
+      '/images/projects/pomodoro-1.png',
+      '/images/projects/pomodoro-2.png',
+    ],
   },
   {
     title: 'Soundscape Generator',
@@ -112,6 +121,7 @@ export const projects: Project[] = [
         url: 'https://github.com/amaclean199/soundscape-generator',
       },
     ],
+    images: ['/images/projects/soundscape-generator-1.jpg'],
   },
   {
     title: 'Cirroo',

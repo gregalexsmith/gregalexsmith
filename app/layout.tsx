@@ -16,11 +16,11 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <html>
       <body>
-        <div className="min-h-screen bg-slate-100 dark:bg-gray-800 dark:text-neutral-50">
+        <div className="min-h-screen">
           <SingleColumn className="max-w-3xl">
             <header className="text-neutral-600 dark:text-neutral-300">
               <div className="flex items-center">
-                <h1 className="flex-grow py-3 text-lg font-bold ">
+                <h1 className="flex-grow py-3 text-lg font-bold">
                   <Link href="/">Greg Smith</Link>
                 </h1>
                 <div className="flex gap-4">

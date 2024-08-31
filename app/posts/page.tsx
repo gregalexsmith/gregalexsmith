@@ -17,10 +17,7 @@ export default async function PostsIndex() {
         <div>
           {allPosts.map(({ slug, title }) => (
             <div key={slug} className="mb-1">
-              <Link
-                href={`/posts/${slug}`}
-                className="text-blue-700 hover:underline dark:text-blue-500"
-              >
+              <Link href={`/posts/${slug}`} className="link">
                 {title}
               </Link>
             </div>
