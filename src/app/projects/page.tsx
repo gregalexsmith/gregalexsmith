@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { Layout } from '../../components';
 import { Projects } from '../../features';
 
-export default function Index() {
+export default function ProjectsPage() {
   return (
     <>
       <Layout>
