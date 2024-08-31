@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { Layout } from '../../components';
 import { getAllPosts } from '../../features';
 
 export const metadata: Metadata = {
@@ -18,25 +17,23 @@ export default async function PostsIndex() {
   ]);
 
   return (
-    <Layout>
-      <div>
-        <h2 className="title1">Posts</h2>
+    <div>
+      <h2 className="title1">Posts</h2>
 
-        {allPosts && (
-          <div>
-            {allPosts.map(({ slug, title }) => (
-              <div key={slug}>
-                <Link
-                  href={`/posts/${slug}`}
-                  className="text-blue-700 hover:underline dark:text-blue-500"
-                >
-                  {title}
-                </Link>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-    </Layout>
+      {allPosts && (
+        <div>
+          {allPosts.map(({ slug, title }) => (
+            <div key={slug}>
+              <Link
+                href={`/posts/${slug}`}
+                className="text-blue-700 hover:underline dark:text-blue-500"
+              >
+                {title}
+              </Link>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }

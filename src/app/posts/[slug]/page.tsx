@@ -1,6 +1,5 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
-import { Layout } from '../../../components';
 import {
   getAllPosts,
   getPostBySlug,
@@ -43,14 +42,12 @@ export default async function Post({ params }: Props) {
   }
 
   return (
-    <Layout>
-      <div>
-        <article className="pb-32">
-          <PostHeader title={post.title} date={post.date} />
-          <PostBody content={post.content} />
-        </article>
-      </div>
-    </Layout>
+    <div>
+      <article className="pb-32">
+        <PostHeader title={post.title} date={post.date} />
+        <PostBody content={post.content} />
+      </article>
+    </div>
   );
 }
 
