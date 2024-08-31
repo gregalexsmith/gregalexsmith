@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import Link from 'next/link';
-import { SingleColumn } from '../components';
-import '../styles/globals.css';
+import { SingleColumn } from '@/components';
+import './globals.css';
 
 export const metadata = {
   title: 'Greg Smith',
