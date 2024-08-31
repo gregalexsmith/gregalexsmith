@@ -1,20 +1,13 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { getAllPosts } from '../../features';
+import { getAllPosts } from '@/data/post';
 
 export const metadata: Metadata = {
   title: 'Posts - Greg Smith',
 };
 
 export default async function PostsIndex() {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'excerpt',
-  ]);
+  const allPosts = getAllPosts();
 
   return (
     <div>

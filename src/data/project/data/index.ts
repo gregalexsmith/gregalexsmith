@@ -10,7 +10,7 @@ type Project = {
   links?: { name: ProjectLink; url: string }[];
 };
 
-export const projectsData: Project[] = [
+export const projects: Project[] = [
   {
     title: 'Next.js + RSC',
     description:
