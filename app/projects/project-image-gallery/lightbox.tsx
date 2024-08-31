@@ -102,7 +102,7 @@ export function Lightbox({
             src={images[currentIndex]}
             alt={`${title} image ${currentIndex + 1}`}
             className="max-w-[90vw] max-h-[calc(90vh-64px)] object-contain mx-auto"
-            width={1200}
+            width={2000}
             height={800}
           />
         </div>

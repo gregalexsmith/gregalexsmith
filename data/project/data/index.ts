@@ -40,6 +40,33 @@ export const projects: Project[] = [
     images: ['/images/projects/workers-hono-api-2.png'],
   },
   {
+    title: 'Sun Time',
+    description:
+      'A simple sun tracking app and visualization for sunrise/sunset times 🌄',
+    links: [
+      { name: 'Website', url: 'https://sun-time.co' },
+      {
+        name: 'Product Hunt',
+        url: 'https://www.producthunt.com/products/suntime-2',
+      },
+    ],
+    images: [
+      '/images/projects/sun-time-1.png',
+      '/images/projects/sun-time-2.png',
+    ],
+  },
+  {
+    title: 'Cirroo',
+    description:
+      'Artist page for electronic musician Cirroo. Showcase new album while providing links for contact and other releases.',
+    tech: {
+      frontEnd: 'HTML5, CSS3, SASS, Gulp',
+      backEnd: 'AWS S3 Static Hosting',
+    },
+    links: [{ name: 'Website', url: 'http://cirroo.com' }],
+    images: ['/images/projects/cirroo-1.png', '/images/projects/cirroo-2.png'],
+  },
+  {
     title: 'Next.js + RSC',
     description:
       'A collection of experiments with Next.js and React Server Components',
@@ -62,41 +89,17 @@ export const projects: Project[] = [
     ],
   },
   {
-    title: 'Sun Time',
-    description:
-      'A simple sun tracking app and visualization for sunrise/sunset times 🌄',
-    links: [
-      { name: 'Website', url: 'https://sun-time.co' },
-      {
-        name: 'Product Hunt',
-        url: 'https://www.producthunt.com/products/suntime-2',
-      },
-    ],
-    images: [
-      '/images/projects/sun-time-1.png',
-      '/images/projects/sun-time-2.png',
-    ],
-  },
-  {
     title: 'Dev Tools Monorepo',
     description:
-      'A collection of tools for developing web apps. Includes a component lib, helpers and more',
+      'An example monorepo with shared tools for FE development. Includes a component library, helpers and more',
     links: [
       { name: 'Github', url: 'https://github.com/gregalexsmith/dev-tools' },
-      {
-        name: 'Storybook',
-        url: 'https://dev-tools-components.netlify.app',
-      },
+      { name: 'Storybook', url: 'https://dev-tools-components.netlify.app' },
     ],
-  },
-  {
-    title: 'Chord Progressions App',
-    description: 'Explore and practice chord progressions on the web',
-    tech: {
-      frontEnd: 'React, Tone.js, Ramda, Recompose',
-      backEnd: 'Netlify',
-    },
-    links: [{ name: 'Website', url: 'https://chordapp-dev.netlify.com/' }],
+    images: [
+      '/images/projects/dev-monorepo-1.png',
+      '/images/projects/dev-monorepo-2.png',
+    ],
   },
   {
     title: 'Tree Museum',
@@ -117,10 +120,7 @@ export const projects: Project[] = [
       backEnd: 'Static hosting on Github Pages',
     },
     links: [
-      {
-        name: 'Website',
-        url: 'https://pomodoro-timer-a42.pages.dev/',
-      },
+      { name: 'Website', url: 'https://pomodoro-timer-a42.pages.dev/' },
       {
         name: 'Github',
         url: 'https://github.com/gregalexsmith/pomodoro-timer',
@@ -149,15 +149,5 @@ export const projects: Project[] = [
       },
     ],
     images: ['/images/projects/soundscape-generator-1.jpg'],
-  },
-  {
-    title: 'Cirroo',
-    description:
-      'Artist page for electronic musician Cirroo. Showcase new album while providing links for contact and other releases.',
-    tech: {
-      frontEnd: 'HTML5, CSS3, SASS, Gulp',
-      backEnd: 'AWS S3 Static Hosting',
-    },
-    links: [{ name: 'Website', url: 'http://cirroo.com' }],
   },
 ];
