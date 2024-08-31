@@ -21,7 +21,7 @@ export const Projects = () => {
                       key={link.url}
                       href={link.url}
                       target="_blank"
-                      className="text-blue-500 hover:text-blue-700"
+                      className="link"
                       rel="noopener noreferrer"
                     >
                       {link.name}

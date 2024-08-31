@@ -13,16 +13,16 @@ const websiteTitle = 'Greg Smith';
 
 export const Layout = ({ children, breadcrumbs }: LayoutProps) => {
   return (
-    <div className="min-h-screen bg-slate-100">
+    <div className="min-h-screen bg-slate-100 dark:bg-gray-800 dark:text-neutral-50">
       <Head>
         <title>{websiteTitle}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <SingleColumn className="max-w-3xl">
-        <header>
+        <header className="text-neutral-600 dark:text-neutral-300">
           <div className="flex items-center">
-            <h1 className="flex-grow py-3 text-lg font-bold text-neutral-600">
+            <h1 className="flex-grow py-3 text-lg font-bold ">
               <Link href="/">{websiteTitle}</Link>
             </h1>
             <div className="flex gap-4">
