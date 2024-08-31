@@ -1,4 +1,0 @@
-#!/bin/sh
-
-npx --no-install commitlint --edit ""
-npx --no-install lint-staged

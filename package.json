@@ -7,12 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "types": "tsc --noEmit",
     "format": "prettier --write .",
-    "prepare": "husky",
     "update": "npx npm-check-updates -i"
   },
   "dependencies": {
-    "@types/node": "18.11.18",
+    "@types/node": "22.5.1",
     "@types/react": "18.3.5",
     "@types/react-dom": "18.3.0",
     "classnames": "^2.5.1",
@@ -24,22 +24,14 @@
     "react-dom": "^18.3.1",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
-    "typescript": "4.9.4"
+    "typescript": "5.5.4"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.4.1",
-    "@commitlint/config-conventional": "^19.4.1",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "autoprefixer": "^10.4.20",
-    "husky": "^9.1.5",
-    "lint-staged": "^15.2.9",
     "postcss": "^8.4.41",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6",
     "tailwindcss": "^3.4.10"
-  },
-  "lint-staged": {
-    "*.ts": "eslint",
-    "*.{ts,json,md,css}": "prettier --write"
   }
 }
