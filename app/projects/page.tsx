@@ -1,6 +1,3 @@
-import Head from 'next/head';
-import { projects } from '@/data/project';
-import ImageGallery from './project-image-gallery';
 import { ProjectsList } from './projects-list';
 
 export const metadata = {
