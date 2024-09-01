@@ -58,13 +58,23 @@ export const projects: Project[] = [
   {
     title: 'Cirroo',
     description:
-      'Artist page for electronic musician Cirroo. Showcase new album while providing links for contact and other releases.',
+      'Music project including releases, artwork and website highlighting latest work.',
     tech: {
       frontEnd: 'HTML5, CSS3, SASS, Gulp',
       backEnd: 'AWS S3 Static Hosting',
     },
     links: [{ name: 'Website', url: 'http://cirroo.com' }],
     images: ['/images/projects/cirroo-1.png', '/images/projects/cirroo-2.png'],
+  },
+  {
+    title: 'Coffee Table',
+    description:
+      'A custom furniture project, designed and built during summer 2023.',
+    images: [
+      '/images/projects/table-1.png',
+      '/images/projects/table-2.png',
+      '/images/projects/table-3.png',
+    ],
   },
   {
     title: 'Next.js + RSC',
