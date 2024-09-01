@@ -58,7 +58,7 @@ export const projects: Project[] = [
   {
     title: 'Cirroo',
     description:
-      'Music project including releases, artwork and website highlighting latest work.',
+      'Music project including releases, artwork and website highlighting latest work',
     tech: {
       frontEnd: 'HTML5, CSS3, SASS, Gulp',
       backEnd: 'AWS S3 Static Hosting',
@@ -68,8 +68,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Coffee Table',
-    description:
-      'A custom furniture project, designed and built during summer 2023.',
+    description: 'A custom furniture project & experiment in woodworking',
     images: [
       '/images/projects/table-1.png',
       '/images/projects/table-2.png',
@@ -114,7 +113,7 @@ export const projects: Project[] = [
   {
     title: 'Tree Museum',
     description:
-      'Artist website and blog for local band Tree Museum. Includes splash page, Instagram integration, show feed and contact form.',
+      'Artist website and blog for local band Tree Museum. Includes splash page, Instagram integration, show feed and contact form',
     tech: {
       frontEnd: 'React, PostCSS',
       backEnd: 'Firebase',
