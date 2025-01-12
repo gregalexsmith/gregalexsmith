@@ -15,11 +15,14 @@ export default async function PostsIndex() {
 
       {allPosts && (
         <div>
-          {allPosts.map(({ slug, title }) => (
-            <div key={slug} className="mb-1">
-              <Link href={`/posts/${slug}`} className="link">
+          {allPosts.map(({ slug, title, excerpt }) => (
+            <div key={slug} className="mb-6">
+              <Link href={`/posts/${slug}`} className="link text-lg">
                 {title}
               </Link>
+              <p className="text-sm text-gray-500 dark:text-gray-400">
+                {excerpt}
+              </p>
             </div>
           ))}
         </div>

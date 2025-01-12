@@ -1,10 +1,10 @@
 ---
 title: '5 Categories of Software Value'
-excerpt: 'Working theory - We can use 5 categories to break down how software creates value'
+excerpt: 'Working theory - We can use 5 categories to look at how software creates value'
 date: 'Feb 12 2023'
 ---
 
-_Working theory - We can use 5 categories to break down how software creates value. They could probably applied to technologies as a whole, but this is a reflection of my experienced so far and interests at the moment (software & the web)._
+_Working theory - We can use 5 categories to look at how software creates value. This is a reflection of my experienced and interests so far (software, hardware & the web) and am curious to see how far these apply, and where they might fall short._
 
 ## Productivity
 
@@ -16,13 +16,13 @@ _It’s easier to \_\_\_\_\_\_\_ with software._
 
 We want to understand our current world and how we got here. Software assists this though systematization, recording, logging, data aggregation and storage.
 
-_We know what’s happened and what we have now._
+_We can understand what's happened and what we have now._
 
 ## Ambiguity
 
 Making decisions about the future is difficult. Software helps us simulate and map out possible paths, risks and tradeoffs
 
-_We can make better informed decisions_
+_We can make informed decisions about the future_
 
 ## Access
 
@@ -38,11 +38,11 @@ _We can work together and connect with others_
 
 ## So What?
 
-I’m hoping categories like this will help to better understand of what “outstanding” software can mean. Both looking back on how things work today and identifying future opportunities.
+I’m hoping this will help to better understand what “outstanding” software can be. Both looking back on how things work today and identifying future opportunities.
 
-### Example - Music Synthesizer 🎹
+### Example 🎹
 
-As an example, let’s brainstorm a bit on the process of creating a synthesizer:
+_As an example, let’s brainstorm a bit on the process of building a musical instrument (synthesizer)._
 
 **Productivity**
 
@@ -73,6 +73,6 @@ As an example, let’s brainstorm a bit on the process of creating a synthesizer
 
 **Connection**
 
-- Connect - Contribute to online communities, gather interest and develop connections around our synthesizer product
-- Customers/Audience - we can find people across the world who are interested in the synthesizer
+- Customers/Audience - we can find people across the world who are interested in the products
 - Collaborate - We can work with others to develop and deliver the product, independent of time and location
+- Connect - Contribute to online communities, gather interest and develop connections around our synthesizer product

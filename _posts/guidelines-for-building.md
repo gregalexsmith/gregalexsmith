@@ -1,10 +1,10 @@
 ---
-title: 'Guidelines for building'
-excerpt: 'This is my current understanding and some sense of priority for the process of building things. It will probably change or grow over time, so this is a bit of a snapshot for the moment'
+title: 'Guidelines for Building'
+excerpt: 'A snapshot of my current approach to building things'
 date: 'Jan 11 2023'
 ---
 
-_A snapshot of my current approach and some sense of priority for the process of building things (like products, websites, apps, code, hardware, understanding/knowledge, etc)_
+_A snapshot of my current approach to building things (like products, websites, apps, code, hardware, understanding/knowledge, etc)_
 
 ## People first
 

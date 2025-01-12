@@ -1,6 +1,6 @@
 ---
 title: 'Book Notes - The Art of Doing Science and Engineering'
-excerpt: 'Takeaways from reading “The Art of Doing Science and Engineering” by Richard W. Hamming'
+excerpt: 'A collection of notes and ideas from “The Art of Doing Science and Engineering” by Richard W. Hamming'
 date: 'Jan 12 2025'
 ---
 
