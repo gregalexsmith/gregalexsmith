@@ -1,9 +1,16 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import { getAllPosts, getPostBySlug } from '@/data/post';
-import { markdownToHtml } from '@/helpers';
 import markdownStyles from './styles.module.css';
 import { PostHeader } from './post-header';
+
+import { remark } from 'remark';
+import html from 'remark-html';
+
+async function markdownToHtml(markdown: string) {
+  const result = await remark().use(html).process(markdown);
+  return result.toString();
+}
 
 type Props = {
   params: { slug: string };
