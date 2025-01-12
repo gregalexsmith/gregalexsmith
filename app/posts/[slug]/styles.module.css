@@ -36,3 +36,11 @@
 .markdown a {
   @apply text-blue-500 dark:text-blue-400 hover:underline;
 }
+
+.markdown blockquote {
+  @apply pl-4 py-1 my-4;
+  @apply border-l-4 border-emerald-300 dark:border-emerald-800;
+  @apply dark:bg-emerald-950/30;
+  @apply text-emerald-700 dark:text-emerald-100;
+  @apply italic;
+}
